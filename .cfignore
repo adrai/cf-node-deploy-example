@@ -1,0 +1,14 @@
+# generally ignore node_modules, but push own modules, without its node_modules
+
+!node_modules
+node_modules/**/*
+
+!node_modules/own_a
+!node_modules/own_a/**/*
+node_modules/own_a/node_modules
+node_modules/own_a/node_modules/**/*
+
+!node_modules/own_a/node_modules/own_b
+!node_modules/own_a/node_modules/own_b/**/*
+node_modules/own_a/node_modules/own_b/node_modules
+node_modules/own_a/node_modules/own_b/node_modules/**/*
