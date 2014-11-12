@@ -1,0 +1,9 @@
+---
+applications:
+- name: test-deploy-example
+  buildpack: https://github.com/KABA-CCEAC/nodejs-buildpack.git
+  # buildpack: https://github.com/cloudfoundry/nodejs-buildpack.git
+  memory: 256M
+  instances: 1
+  path: .
+  command: node index.js
